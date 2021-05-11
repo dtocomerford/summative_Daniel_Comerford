@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="58sp"
+        android:layout_marginTop="15sp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/usernameTextField"
+        android:layout_width="match_parent"
+        android:layout_height="22sp"
+        android:layout_marginTop="15sp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:text="Username"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextUName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:autofillHints="Username"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/passwordTextField"
+        android:layout_width="match_parent"
+        android:layout_height="22sp"
+        android:layout_marginTop="15sp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:text="Password"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/feedbackEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="goToWelcomePage"
+        android:text="Login"
+        app:backgroundTint="#2D5A2F" />
+
+    <TextView
+        android:id="@+id/loginFeedbackTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:textColor="#C62828"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:text="Don't have an account?" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_weight="0"
+        android:onClick="goToRegisterPage"
+        android:text="Register"
+        app:backgroundTint="#2D5A2F" />
+
+</LinearLayout>
