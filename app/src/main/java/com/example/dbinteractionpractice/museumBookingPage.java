@@ -43,7 +43,9 @@ public class museumBookingPage extends AppCompatActivity {
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
-            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
+            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth)
+            {
+                month++;
                 objTicket.bookDate = dayOfMonth + " " + month + " " + year;
                 System.out.println("BOOK DATE: " + objTicket.bookDate);
             }

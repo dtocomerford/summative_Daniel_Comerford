@@ -79,7 +79,7 @@
         android:gravity="center_horizontal|center_vertical"
         android:onClick="goToWelcomePage"
         android:text="Login"
-        app:backgroundTint="#2D5A2F" />
+        app:backgroundTint="#673AB7" />
 
     <TextView
         android:id="@+id/loginFeedbackTextView"
@@ -110,6 +110,6 @@
         android:layout_weight="0"
         android:onClick="goToRegisterPage"
         android:text="Register"
-        app:backgroundTint="#2D5A2F" />
+        app:backgroundTint="#673AB7" />
 
 </LinearLayout>

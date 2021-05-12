@@ -20,6 +20,7 @@ public class receiptPage extends AppCompatActivity
     int moneyPaid;
     int total;
     double confirmationCode;
+    int finalCode;
     Random rand;
     int minNum = 100000;
     int maxNum = 999999;
@@ -36,6 +37,7 @@ public class receiptPage extends AppCompatActivity
 
         rand = new Random();
         confirmationCode = Math.floor(Math.random()*(maxNum-minNum+1)+minNum);
+        finalCode = (int) confirmationCode;
 
         moneyPaid = 0;
 
@@ -76,7 +78,7 @@ public class receiptPage extends AppCompatActivity
 
                 if(moneyPaid >= total)
                 {
-                    confirmationText.setText("Total paid: " + total +"\n Confirmation code: " + confirmationCode);
+                    confirmationText.setText("Total paid: " + total +"\n Confirmation code: " + finalCode);
 
                 }
 
