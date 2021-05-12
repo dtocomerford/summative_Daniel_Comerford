@@ -70,8 +70,8 @@ public class museumShop extends AppCompatActivity {
         objOrder.museumTicket = objTicket;
 
 
-        System.out.println("MUSEUM NAME: " + objTicket.name);
-        System.out.println("TICKET COST: " + objTicket.cost);
+        //System.out.println("MUSEUM NAME: " + objTicket.name);
+        //System.out.println("TICKET COST: " + objTicket.cost);
 
 
 
